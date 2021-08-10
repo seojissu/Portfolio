@@ -1,0 +1,502 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* *{ border: 0.1px solid #7a7a7a;} */
+ul{list-style: none;}
+a {
+    text-decoration: none;
+}
+
+
+/* swiper */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: rgb(252, 234, 195);
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets {
+    top: 96%;
+}
+
+:root {
+    --swiper-theme-color: #000;
+}
+
+.sec1 {
+    display: flex;
+}
+
+.sec1 .left {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sec1 .left h1 {
+    font-size: 100px;
+    margin-top: 20px;
+    color: rgb(58, 58, 58);
+}
+
+.sec1 .right {
+    padding: 50px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10%;
+}
+
+.sec1 .right .img {
+    background: url(../img/KakaoTalk_20210611_133617491.jpg) no-repeat center;
+    width: 100%;
+    height: 100%;
+    background-size: auto 120%;
+}
+
+.sec1 .right h1 span {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    animation: bounce .5s ease infinite alternate;
+    font-size: 200px;
+    color: #FFF;
+    text-shadow: 0 1px 0 #CCC,
+        0 2px 0 #CCC,
+        0 3px 0 #CCC,
+        0 4px 0 #CCC,
+        0 5px 0 #CCC,
+        0 6px 0 transparent,
+        0 7px 0 transparent,
+        0 8px 0 transparent,
+        0 9px 0 transparent,
+        0 10px 10px rgba(0, 0, 0, .4);
+}
+
+.sec1 .right h1 span:nth-child(2) {
+    animation-delay: .1s;
+}
+
+.sec1 .right h1 span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.sec1 .right h1 span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.sec1 .right h1 span:nth-child(5) {
+    animation-delay: .4s;
+}
+
+.sec1 .right h1 span:nth-child(6) {
+    animation-delay: .5s;
+}
+
+.sec1 .right h1 span:nth-child(7) {
+    animation-delay: .6s;
+}
+
+.sec1 .right h1 span:nth-child(8) {
+    animation-delay: .7s;
+}
+
+@keyframes bounce {
+    100% {
+        top: -10px;
+        text-shadow: 0 1px 0 #CCC,
+            0 2px 0 #CCC,
+            0 3px 0 #CCC,
+            0 4px 0 #CCC,
+            0 5px 0 #CCC,
+            0 6px 0 #CCC,
+            0 7px 0 #CCC,
+            0 8px 0 #CCC,
+            0 9px 0 #CCC,
+            0 50px 25px rgba(0, 0, 0, .2);
+    }
+}
+
+.sec2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.sec2 .title{
+    position: absolute;
+    bottom: 50px;
+    font-size: 50px;
+    left: 50px;
+    color: rgb(58, 58, 58);
+}
+.sec2 .right{
+    width: 65%;
+    height: 95%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    margin-right: 5%;
+}
+.sec2 .tabV ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.sec2 .tabV ul li{
+    width: 100%;
+    height: 105px;
+    cursor: pointer;
+}
+
+.sec2 .tabV .content{
+    padding: 20px;
+    margin: 0 0 0 180px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+.sec2 .tabV .content.on{ 
+    display: flex;
+}
+.sec2 .tabV li .button{
+    background: rgb(209, 200, 178);
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute; 
+    top: 50px;
+    left: -100px;
+}
+.sec2 .tabV li:nth-child(2) .button{position: absolute; top: 130px;}
+.sec2 .tabV li.on .button{background: #fff;}
+.sec2 .tabV li .button a{color: #333;}
+
+
+.sec3 .swiper-slide {
+    display: flex;
+    position: relative;
+}
+
+.sec3 .left {
+    width: 35%;
+    padding: 7%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: rgb(75, 75, 75);
+    font-size: 13px;
+}
+
+.sec3 .right .main_set {
+    z-index: 0;
+    text-align: right;
+}
+
+.sec3 .right .set {
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+
+.sec3 .right .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/sealife_og.PNG) no-repeat center;
+    background-size: 100%;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+
+.sec3 .set1 .right .img {
+    background: url(../img/pigeon_og.PNG) no-repeat center;
+    background-size: 100%;
+}
+
+.sec3 .set3 .left .img {
+    background: #000;
+}
+
+.sec3 .swiper-slide .title {
+    z-index: 50;
+    color: rgb(58, 58, 58);
+    font-size: 140px;
+    font-weight: 900;
+    position: absolute;
+    top: 285px;
+    left: 190px;
+    transform: rotate(90deg);
+}
+
+.title p {
+    display: inline-block;
+    margin: 0 -.05em;
+    animation: title 3s infinite;
+}
+
+.title p:nth-child(2) {
+    animation-delay: .1s;
+}
+
+.title p:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.title p:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.title p:nth-child(5) {
+    animation-delay: .4s;
+}
+
+.title p:nth-child(6) {
+    animation-delay: .5s;
+}
+
+.title p:nth-child(7) {
+    animation-delay: .6s;
+}
+
+.title p:nth-child(8) {
+    animation-delay: .7s;
+}
+
+@keyframes title {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+.sec3 .right {
+    margin: 40px 0;
+    position: relative;
+    background: #fff;
+    width: 65%;
+    height: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -15px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sec3 .right .main {
+    margin-top: 5px;
+    background: url(../img/sealife_main.PNG) no-repeat;
+    background-size: auto 100%;
+    width: 800px;
+    height: 400px;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sec3 .set1 .right .main {
+    background: url(../img/pigeon_main.PNG) no-repeat center;
+    background-size: auto 100%;
+}
+
+.sec3 .right .button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.3s;
+    color: #0000;
+}
+
+.sec3 .right .main_set:hover {
+    z-index: 50;
+    transition: all 0.3s;
+}
+
+.sec3 .right .main:hover .button {
+    background: rgba(88, 88, 88, 0.819);
+    color: #fff;
+    border: 1PX solid #fff;
+    transition: all 0.3s;
+}
+
+.sec3 .right .phone {
+    display: none;
+    background: url(../img/sealife_phone.png) no-repeat center;
+    width: 150px;
+    background-size: 100% 100%;
+    height: 300px;
+}
+
+.sec3 .set1 .right .phone {
+    background: url(../img/pigeon_phone.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.sec3 .set3 .right .phone {
+    background: #aaa;
+}
+
+.sec4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background: url(../img/text.png); */
+    width: 100%;
+}
+
+div.snip1436 .text {
+    font-weight: 100;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: scale(0.5) translate(0%, -50%);
+    transform: scale(0.5) translate(0%, -50%);
+    -webkit-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    z-index: 1;
+    opacity: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+div.snip1436 .text a{
+    margin: 20px 0;
+    color: rgb(58, 58, 58);
+}
+div.snip1436 .text a:hover{
+    font-weight: 500;
+}
+div.snip1436 {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    width: 800px;
+    color: rgb(58, 58, 58);
+    text-align: left;
+    font-size: 16px;
+}
+
+div.snip1436 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+div.snip1436 .main_text{
+    font-size: 25px;
+    width: 1000px;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    backface-visibility: hidden;
+    height: 500px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.snip1436 .main_text p:first-child{
+    font-weight: 100;
+}
+div.snip1436 h1 {
+    color: #fff;
+    font-size: 150px;
+    text-shadow: 0 1px 0 #CCC,
+        0 2px 0 #CCC,
+        0 3px 0 #CCC,
+        0 4px 0 #CCC,
+        0 5px 0 #CCC,
+        0 6px 0 transparent,
+        0 7px 0 transparent,
+        0 8px 0 transparent,
+        0 9px 0 transparent,
+        0 10px 10px rgba(0, 0, 0, .4);
+}
+
+div.snip1436:hover .main_text {
+    -webkit-animation: snip1436 0.45s linear forwards;
+    animation: snip1436 0.45s linear forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+div.snip1436:hover .text {
+    -webkit-transform: scale(1) translate(0, -50%);
+    transform: scale(1) translate(0, -50%);
+    opacity: 1;
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+@-webkit-keyframes snip1436 {
+    50% {
+        -webkit-transform: scale(0.8) translateX(0%);
+        transform: scale(0.8) translateX(0%);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(0.8) translateX(-150%);
+        transform: scale(0.8) translateX(-150%);
+        opacity: 0.5;
+    }
+}
+@keyframes snip1436 {
+    50% {
+        -webkit-transform: scale(0.8) translateX(0%);
+        transform: scale(0.8) translateX(0%);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(0.8) translateX(-150%);
+        transform: scale(0.8) translateX(-150%);
+        opacity: 0.5;
+    }
+}
