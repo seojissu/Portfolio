@@ -144,8 +144,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: relative;
 }
+.sec2 .inner{position: relative;}
 .sec2 .title{
     position: absolute;
     bottom: 50px;
@@ -383,7 +383,7 @@ body {
     position: relative;
     background: #fff;
     width: 65%;
-    height: 90%;
+    height: 700px;
     padding: 20px;
     display: flex;
     flex-direction: column;
