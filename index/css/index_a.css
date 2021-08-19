@@ -164,10 +164,12 @@ body {
     background: #fff;
     margin-right: 5%;
 }
+.sec2 .tabV{height: 100%;}
 .sec2 .tabV ul{
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .sec2 .tabV ul li{
     width: 100%;
@@ -177,12 +179,12 @@ body {
 .sec2 .tabV .content{
     padding: 10%;
     width: 100%;
+    height: 100%;
     position: absolute;
     right: 0;
     top: 0;
     display: none;
 }
-/* .sec2 .tabV .con2 .content {padding: 12%;} */
 .sec2 .tabV .content.on{ 
     display: flex;
 }
@@ -223,6 +225,7 @@ body {
 .sec2 .con2 .conbox{
     position: relative;
     width: 100%;
+    height: 100%;
 }
 .sec2 .con2 .conbox .pie-chart{
     position: absolute;
@@ -245,13 +248,13 @@ body {
     color: rgb(224, 224, 0);
 }
 .sec2 .con2 .conbox .pie-chart:nth-child(4){
-    top: 250px;
+    bottom: 0;
     left: 25%;
     transform: translate(-25%);
     color: darkblue;
 }
 .sec2 .con2 .conbox .pie-chart:nth-child(5){
-    top: 250px;
+    bottom: 0;
     right: 25%;
     transform: translate(25%);
     color: orange;

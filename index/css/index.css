@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* 기본세팅 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 기본세팅 end */
+
+/* swiper */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets {
+    top: 96%;
+}
+
+:root {
+    --swiper-theme-color: #000;
+}
+
+/* swiper end */
+
+/* sec1 */
+.sec1 {
+    background: gray;
+    padding: 2rem;
+}
+
+.Words {
+    margin: 0 auto;
+    padding: 80px 0;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-size: 68px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    transform: translate3d(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-kerning: normal;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/*
+  ** Apply common styles to each line of text
+  */
+.Words-line {
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*
+  ** Fine-grained text styles
+  */
+p {
+    height: clip-height;
+    line-height: line-height;
+    padding: 0 10px;
+    transition: all .4s ease-in-out;
+    transform: translate3d(0, 0, 0);
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+
+/*
+  ** The hover interaction
+  */
+
+
+/* sec1 end */
+
+/* sec2 */
+.sec2 {
+    background: #fff;
+}
+
+/* sec2 end */
+
+/* sec3 */
+.sec3 {
+    background: #fff;
+}
+
+/* sec3 end */
+
+/* sec4 */
+.sec4 {
+    background: #aaa;
+}
+
+/* sec4 end */
