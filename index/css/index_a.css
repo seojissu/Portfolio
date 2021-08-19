@@ -379,7 +379,7 @@ body {
 }
 
 .sec3 .right {
-    position: absolute;
+    position: relative;
     margin: 40px 0;
     background: #fff;
     width: 65%;
@@ -390,7 +390,6 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: -15px 0px 20px rgba(0, 0, 0, 0.2);
-    right: 0;
 }
 
 .sec3 .right .main {
