@@ -47,3 +47,28 @@ $(".tabV ul li").click(function(){
   $("#"+$(this).data('id')).addClass('on');
   return false;
 });
+
+$(".tabV ul .con2 .button").click(function(){
+  draw(80, '.pie-chart1', 'orangered');
+  draw(85, '.pie-chart2', 'skyblue');
+  draw(50, '.pie-chart3', 'rgb(244, 244, 0)');
+  draw(75, '.pie-chart4', 'darkblue');
+  draw(70, '.pie-chart5', 'orange');
+});
+
+function draw(max, classname, colorname){
+  var i=1;
+   var func1 = setInterval(function(){
+     if(i<max){
+         color1(i,classname,colorname);
+         i++;
+     } else{
+       clearInterval(func1);
+     }
+   },10);
+}
+function color1(i, classname,colorname){
+  $(classname).css({
+       "background":"conic-gradient("+colorname+" 0% "+i+"%, rgb(212, 212, 212) "+i+"% 100%)"
+  });
+}

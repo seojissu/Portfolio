@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&display=swap');
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .inner {
@@ -19,7 +19,6 @@ ul{list-style: none;}
 a {
     text-decoration: none;
 }
-
 
 /* swiper */
 html,
@@ -59,7 +58,7 @@ body {
 }
 
 .sec1 .left h1 {
-    font-size: 100px;
+    font-size: 90px;
     margin-top: 20px;
     color: rgb(58, 58, 58);
 }
@@ -83,7 +82,7 @@ body {
     top: 10px;
     display: inline-block;
     animation: bounce .5s ease infinite alternate;
-    font-size: 200px;
+    font-size: 190px;
     color: #FFF;
     text-shadow: 0 1px 0 #CCC,
         0 2px 0 #CCC,
@@ -154,6 +153,10 @@ body {
     left: 50px;
     color: rgb(58, 58, 58);
 }
+.sec2 .title p{
+    font-weight: 100;
+    font-size: 20px;
+}
 .sec2 .right{
     width: 65%;
     height: 95%;
@@ -171,33 +174,101 @@ body {
     height: 105px;
     cursor: pointer;
 }
-
 .sec2 .tabV .content{
-    padding: 20px;
-    margin: 0 0 0 180px;
+    padding: 10%;
     width: 100%;
     position: absolute;
     right: 0;
     top: 0;
     display: none;
 }
+/* .sec2 .tabV .con2 .content {padding: 12%;} */
 .sec2 .tabV .content.on{ 
     display: flex;
 }
 .sec2 .tabV li .button{
     background: rgb(209, 200, 178);
-    width: 100px;
+    width: 120px;
     height: 60px;
     line-height: 60px;
     text-align: center;
     position: absolute; 
     top: 50px;
-    left: -100px;
+    left: -120px;
 }
 .sec2 .tabV li:nth-child(2) .button{position: absolute; top: 130px;}
 .sec2 .tabV li.on .button{background: #fff;}
 .sec2 .tabV li .button a{color: #333;}
-
+.sec2 .text{
+    display: flex;
+    font-weight: 300;
+}
+.sec2 .conbox{
+    display: flex;
+}
+.sec2 .text .le{margin: 0 50px 0 0;}
+.sec2 .conbox div > h4{margin-bottom: 10px;}
+.sec2 .conbox div .text{margin-bottom: 40px;}
+.sec2 .set2{padding-left: 50px;}
+.sec2 .set1{
+    padding-right: 50px;
+}
+.sec2 .set2 .text{
+    flex-direction: column;
+}
+.sec2 .set2 .text p:last-child{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.sec2 .con2 .conbox{
+    position: relative;
+    width: 100%;
+}
+.sec2 .con2 .conbox .pie-chart{
+    position: absolute;
+    display:inline-block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background: rgb(212, 212, 212);
+    color: orangered;
+    font-size: 20px;
+}
+.sec2 .con2 .conbox .pie-chart:nth-child(2){
+    right: 50%;
+    transform: translate(50%);
+    color: skyblue;
+}
+.sec2 .con2 .conbox .pie-chart:nth-child(3){
+    right: 0;
+    color: rgb(224, 224, 0);
+}
+.sec2 .con2 .conbox .pie-chart:nth-child(4){
+    top: 250px;
+    left: 25%;
+    transform: translate(-25%);
+    color: darkblue;
+}
+.sec2 .con2 .conbox .pie-chart:nth-child(5){
+    top: 250px;
+    right: 25%;
+    transform: translate(25%);
+    color: orange;
+}
+.sec2 .con2 span.center{
+    background: #fff;
+    display : block;
+    position: absolute;
+    top:50%; 
+    left:50%;
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    text-align:center; 
+    line-height: 150px;
+    transform: translate(-50%, -50%);
+}
 
 .sec3 .swiper-slide {
     display: flex;
@@ -253,42 +324,42 @@ body {
     font-size: 140px;
     font-weight: 900;
     position: absolute;
-    top: 285px;
+    top: 270px;
     left: 190px;
     transform: rotate(90deg);
 }
 
-.title p {
+.sec3 .title p {
     display: inline-block;
     margin: 0 -.05em;
     animation: title 3s infinite;
 }
 
-.title p:nth-child(2) {
+.sec3 .title p:nth-child(2) {
     animation-delay: .1s;
 }
 
-.title p:nth-child(3) {
+.sec3 .title p:nth-child(3) {
     animation-delay: .2s;
 }
 
-.title p:nth-child(4) {
+.sec3 .title p:nth-child(4) {
     animation-delay: .3s;
 }
 
-.title p:nth-child(5) {
+.sec3 .title p:nth-child(5) {
     animation-delay: .4s;
 }
 
-.title p:nth-child(6) {
+.sec3 .title p:nth-child(6) {
     animation-delay: .5s;
 }
 
-.title p:nth-child(7) {
+.sec3 .title p:nth-child(7) {
     animation-delay: .6s;
 }
 
-.title p:nth-child(8) {
+.sec3 .title p:nth-child(8) {
     animation-delay: .7s;
 }
 
@@ -402,11 +473,11 @@ div.snip1436 .text {
     transform-origin: 50% 0%;
     z-index: 1;
     opacity: 0;
-    padding: 50px;
     display: flex;
     flex-direction: column;
 }
 div.snip1436 .text a{
+    cursor: pointer;
     margin: 20px 0;
     color: rgb(58, 58, 58);
 }
