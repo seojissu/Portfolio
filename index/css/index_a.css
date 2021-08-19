@@ -274,7 +274,6 @@ body {
 }
 
 .sec3 .swiper-slide .inner{
-    position: relative;
     display: flex;
     height: 100%;
 }
@@ -379,8 +378,9 @@ body {
 }
 
 .sec3 .right {
-    position: relative;
     margin: 40px 0;
+    position: absolute;
+    right: 10px;
     background: #fff;
     width: 65%;
     height: 90%;
